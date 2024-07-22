@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Layout</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 7px;
+            margin-bottom: 50px;
+        }
+        .full-width-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 7px;
+        }
+        .card {
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        .card-header {
+            background-color: #ccd1be;
+            border-bottom: 1px solid #ddd;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .chart-card {
+            height: 40vh;
+        }
+        .chart-card canvas {
+            height: 100% !important;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        .refresh-indicator {
+            text-align: center;
+            margin: 7px;
+        }
+        .table {
+            width: 100%;
+        }
+		.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+   
+</head>
+<body>
+<div class="topnav">
+        <a  href="main.html">Main</a>
+		<a href="2.html">2 Chart</a>
+        <a href="3.html">3 Chart</a>
+        <a href="4.html">4 Charts</a>
+        <a class="active" href="6.html">6 Charts</a>
+        <a href="#about">About</a>
+      </div>
+    <div class="container">
+       
+
+        <div class="grid-container">
+            <div class="card chart-card">
+                <div class="card-header">
+                    1
+                </div>
+                <div class="card-body">
+                    <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=13&sym=NIFTY%2050&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="100%"title="description"></iframe>
+                </div>
+            </div>
+            <div class="card chart-card">
+                <div class="card-header">
+                    2
+                </div>
+                <div class="card-body">
+                    <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=13&sym=NIFTY%2050&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="100%"title="description"></iframe>
+                </div>
+            </div>
+            <div class="card chart-card">
+                <div class="card-header">
+                    3
+                </div>
+                <div class="card-body">
+                    <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=13&sym=NIFTY%2050&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="100%"title="description"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- New charts section -->
+        <div class="grid-container">
+            
+            <div class="card chart-card">
+                <div class="card-header">
+                    4
+                </div>
+                <div class="card-body">
+                     <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=13&sym=NIFTY%2050&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="100%"title="description"></iframe>
+                </div>
+            </div>
+			<div class="card chart-card">
+                <div class="card-header">
+                    5
+                </div>
+                <div class="card-body">
+                     <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=25&sym=NIFTYBANK&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="100%"title="description"></iframe>
+                </div>
+            </div>
+            <div class="card chart-card">
+                <div class="card-header">
+                    6
+                </div>
+                <div class="card-body">
+                     <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=25&sym=NIFTYBANK&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="100%"title="description"></iframe>
+                </div>
+            </div>
+        </div>		
+
+     
+</body>
+</html>

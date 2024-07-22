@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Moves Trade</title>
+    <style>
+        html {
+            font: 62.5%/1.2 "Arial", sans-serif;
+        }
+        .grid {
+            background-color: #776BCC;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .grid > div {
+            background-color: #C7C5F4;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 30px;
+            flex-grow: 1;
+        }
+        .grid-item:first-child {
+            flex-basis: 100%;
+        }
+        @media screen and (max-width: 30em) {
+            .grid-item {
+                flex-basis: 100%;
+            }
+        }
+		 .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+</head>
+<body>
+<div class="topnav">
+        <a href="main.html">Main</a>
+        <a href="2.html">2 Chart</a>
+        <a class="active" href="3.html">3 Chart</a>
+        <a href="4.html">4 Charts</a>
+        <a href="6.html">6 Charts</a>
+        <a href="#about">About</a>
+      </div>
+
+    <div class="grid">
+        <div class="grid-item">
+            <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=13&sym=NIFTY%2050&src=W&expcode=0&inst=IDX&userid=Z03N06" height="380" width="99%" title="description"></iframe>
+        </div>
+        <div class="grid-item">
+            <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=25&sym=NIFTYBANK&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="98%" title="description"></iframe>
+        </div>
+        <div class="grid-item">
+            <iframe src="https://chartist.in/acumen/chart.html?exch=IDX&seg=I&secid=25&sym=NIFTYBANK&src=W&expcode=0&inst=IDX&userid=Z03N06" height="300" width="98%" title="description"></iframe>
+        </div>
+        
+    </div>
+</body>
+</html>
