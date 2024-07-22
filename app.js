@@ -57,6 +57,22 @@ app.get('/main', redirectToLogin, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'main.html'));
 });
 
+app.get('/2chart', redirectToLogin, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '2.html'));
+});
+
+app.get('/3chart', redirectToLogin, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '3.html'));
+});
+
+app.get('/4chart', redirectToLogin, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '4.html'));
+});
+
+app.get('/6chart', redirectToLogin, (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', '6.html'));
+});
+
 app.post('/signup', (req, res) => {
   const { name, mobile, username, password } = req.body;
   const users = readUsers();
@@ -73,7 +89,7 @@ app.post('/signup', (req, res) => {
   writeUsers(users);
 
   res.status(201).send('User signed up successfully');
-  res.redirect('/main')
+  res.redirect('/main');
 });
 
 app.post('/login', (req, res) => {
